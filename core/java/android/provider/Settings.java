@@ -5865,6 +5865,7 @@ public final class Settings {
 
         /**
          * Whether to tint the QS tiles with accent color
+         * Screen off fod
          * @hide
          */
         public static final String QS_TILE_ACCENT_TINT = "qs_tile_accent_tint";
@@ -5874,6 +5875,12 @@ public final class Settings {
          * @hide
          */
         public static final String NOTIFICATION_HEADERS = "notification_headers";
+
+         /**
+         * Whether the button backlight is only lit when pressed (and not when screen is touched)
+         * The value is boolean (1 or 0).
+         */
+        public static final String BUTTON_BACKLIGHT_ONLY_WHEN_PRESSED = "button_backlight_only_when_pressed";
 
         /**
          * Data usage period
@@ -6017,6 +6024,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(DOUBLE_TAP_SLEEP_LOCKSCREEN);
             PRIVATE_SETTINGS.add(INCALL_FEEDBACK_VIBRATE);
             PRIVATE_SETTINGS.add(NOTIFICATION_HEADERS);
+            PRIVATE_SETTINGS.add(BUTTON_BACKLIGHT_ONLY_WHEN_PRESSED);
         }
 
         /**
